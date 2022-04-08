@@ -1,7 +1,6 @@
 import requests
 
 from config.widget import Oauth
-import random
 
 
 class ApiClient:
