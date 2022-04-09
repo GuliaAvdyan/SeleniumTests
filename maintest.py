@@ -75,4 +75,10 @@ def scroll_down(self):
 def scroll_up():
     driver.find_element(By.TAG_NAME, 'body').send_keys(Keys.CONTROL + Keys.HOME)
 
+def take_screenshot(test_name):
+    """ Take screenshot. Call it when test failed """
+    dt_now = datetime.datetime.now()
+    screenshot_basename = '{:%d_%m_%Y_%H_%M_%S}_{}.png'.format(dt_now, test_name)
+    driver.save_screenshot(screenshot_basename)
+
 
