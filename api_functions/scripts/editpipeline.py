@@ -43,4 +43,3 @@ def delete_pipeline():
     return delete_pipeline
 
 
-print(add_status())
